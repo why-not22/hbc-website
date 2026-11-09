@@ -7,7 +7,7 @@ permalink: /posts/:title/
 # Contact form: paste your Formspree form ID here once it exists (leave blank for now)
 formspree_id: "maeegylp"
 # Visit tracking: paste your Cloudflare Web Analytics token here once the site is live
-cloudflare_analytics_token: ""
+cloudflare_analytics_token: "aa6802ffae1b44a29638fae333d5e4b7"
 
 exclude: [README.md]
 
