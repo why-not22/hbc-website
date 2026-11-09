@@ -1,0 +1,15 @@
+<nav class="menubar{% unless page.landing %} menubar-inner{% endunless %}" aria-label="Main">
+  <div class="wrap">
+    {%- unless page.landing %}
+    <a class="home" href="/" aria-label="{{ site.title }}, home"><img src="/assets/logo-mark.svg" alt=""></a>
+    {%- endunless %}
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul id="menu">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/services/"{% if page.nav == "services" %} aria-current="page"{% endif %}>Services</a></li>
+      <li><a href="/track-record/"{% if page.nav == "track-record" %} aria-current="page"{% endif %}>Track record</a></li>
+      <li><a href="/posts/"{% if page.nav == "posts" %} aria-current="page"{% endif %}>Posts</a></li>
+      <li><a href="/contact/"{% if page.nav == "contact" %} aria-current="page"{% endif %}>Contact</a></li>
+    </ul>
+  </div>
+</nav>

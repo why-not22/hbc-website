@@ -1,0 +1,23 @@
+---
+layout: default
+title: Posts
+nav: posts
+permalink: /posts/
+---
+{% include menu.html %}
+<main>
+  <section class="block" id="posts">
+    <div class="wrap split">
+      <h2>Posts<small>Short posts on biotech, drug discovery and company building.</small></h2>
+      <div class="notes">
+        {%- for post in site.posts limit: 5 %}
+        <article class="note">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          <h3><a href="{{ post.url }}">{% include t.html text=post.title %}</a></h3>
+          <p>{% include t.html text=post.summary %}</p>
+        </article>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,177 @@
+# Settings for the Pages CMS editor (app.pagescms.org): turns each content file into a form.
+media:
+  input: assets
+  output: /assets
+
+content:
+  - name: about
+    label: About
+    type: file
+    path: _data/about.yml
+    format: yaml
+    fields:
+      - { name: founder_line, label: Line under the heading, type: string }
+      - { name: paragraphs, label: Paragraphs, type: text, list: true }
+
+  - name: expertise
+    label: Expertise
+    type: file
+    path: _data/expertise.yml
+    format: yaml
+    list: true
+    fields:
+      - { name: name, label: Area, type: string, required: true }
+      - { name: description, label: One-line description, type: string }
+      - { name: highlight, label: Highlight in gold, type: boolean }
+
+  - name: services
+    label: Services
+    type: file
+    path: _data/services.yml
+    format: yaml
+    list: true
+    fields:
+      - { name: name, label: Service, type: string, required: true }
+      - { name: description, label: Description, type: text }
+
+  - name: posts
+    label: Posts
+    type: collection
+    path: _posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    format: yaml-frontmatter
+    view:
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: date, label: Date, type: date }
+      - { name: summary, label: Summary for the home page, type: text }
+      - { name: body, label: Post, type: rich-text }
+
+  - name: contact
+    label: Contact
+    type: file
+    path: _data/contact.yml
+    format: yaml
+    fields:
+      - { name: intro, label: Line under the heading, type: string }
+
+  - name: track_record
+    label: Track record
+    type: file
+    path: _data/track_record.yml
+    format: yaml
+    fields:
+      - { name: summary, label: Summary, type: text }
+      - name: figures
+        label: Headline figures
+        type: object
+        list: true
+        fields:
+          - { name: value, label: Figure, type: string }
+          - { name: label, label: Label, type: string }
+      - name: leadership
+        label: R&D leadership
+        type: object
+        list: true
+        fields:
+          - { name: org, label: Organization, type: string }
+          - { name: detail, label: Team led, type: string }
+      - name: career
+        label: Career entries (newest first)
+        type: object
+        list: true
+        fields:
+          - { name: year, label: Dates, type: string }
+          - { name: title, label: Role, type: string }
+          - { name: org, label: Organization and location, type: string }
+          - { name: description, label: Summary, type: text }
+          - { name: points, label: Bullet points, type: text, list: true }
+      - name: thesis
+        label: Thesis
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: author, label: Author, type: string }
+          - { name: institution, label: Institution, type: string }
+          - { name: degree, label: Degree, type: string }
+          - { name: year, label: Year, type: string }
+          - { name: link, label: Link, type: string }
+
+  - name: organizations
+    label: Organizations
+    type: file
+    path: _data/organizations.yml
+    format: yaml
+    list: true
+    fields:
+      - { name: name, label: Organization, type: string, required: true }
+      - { name: logo, label: Logo, type: image }
+      - { name: dark, label: Show logo on a black tile, type: boolean }
+      - { name: link, label: Website, type: string }
+
+  - name: funding
+    label: Research funding
+    type: file
+    path: _data/funding.yml
+    format: yaml
+    fields:
+      - name: organizations
+        label: Funding organizations
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Organization, type: string, required: true }
+          - { name: logo, label: Logo, type: image }
+          - { name: dark, label: Show logo on a black tile, type: boolean }
+          - { name: link, label: Website, type: string }
+      - { name: private, label: Private investment types, type: string, list: true }
+
+  - name: publications
+    label: Publications
+    type: file
+    path: _data/publications.yml
+    format: yaml
+    list: true
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: authors, label: Authors, type: string }
+      - { name: journal, label: Journal, type: string }
+      - { name: year, label: Year, type: string }
+      - { name: details, label: "Volume(issue):pages", type: string }
+      - { name: note, label: "Note (e.g., Editorial)", type: string }
+      - { name: link, label: Link (DOI or PubMed URL), type: string }
+
+  - name: patents
+    label: Patents
+    type: file
+    path: _data/patents.yml
+    format: yaml
+    list: true
+    fields:
+      - { name: area, label: Organization and area, type: string, required: true }
+      - name: patents
+        label: Patents in this group (newest first)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: number, label: Patent or publication number, type: string }
+          - { name: filed, label: Year filed, type: string }
+          - { name: granted, label: "Year granted (leave blank if not granted)", type: string }
+          - { name: inventors, label: Inventors, type: string }
+          - { name: related, label: Related continuation (optional), type: string }
+          - { name: link, label: Link (Google Patents URL), type: string }
+
+  - name: social
+    label: Social links
+    type: file
+    path: _data/social.yml
+    format: yaml
+    list: true
+    fields:
+      - { name: name, label: Name, type: string }
+      - { name: icon, label: Icon, type: select, options: { values: [linkedin, orcid, scholar, github] } }
+      - { name: url, label: Link, type: string }

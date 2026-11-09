@@ -1,0 +1,271 @@
+/* v18.3: draw only the "&" character in a clean standard font; Saira's square & reads like "E" */
+@font-face{font-family:"HBC Amp";src:local("Helvetica Neue"),local("HelveticaNeue"),local("Helvetica"),local("Arial"),local("Liberation Sans");unicode-range:U+0026}
+:root{
+  --black:#000000;
+  --ink:#E8EEFB;        /* body text */
+  --muted:#93A3C4;      /* secondary text */
+  --deep:#1D4FC4;       /* logo outer arc */
+  --mid:#2F6FEA;        /* logo middle arc */
+  --light:#79A2F2;      /* logo inner arc / tagline */
+  --gold:#E3C35A;       /* mitochondria in the cell image — used once */
+  --line:#16285A;
+  --measure:64ch;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{background:var(--black);color:var(--ink);font-family:"HBC Amp","Saira",system-ui,sans-serif;font-stretch:100%;font-weight:400;font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--light);text-underline-offset:3px}
+a:hover{color:#fff}
+:focus-visible{outline:2px solid var(--light);outline-offset:3px;border-radius:2px}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+
+/* Placeholder copy: dashed so it's obvious what still needs writing */
+.ph{border:1px dashed #3A5598;border-radius:4px;padding:.15em .45em;color:var(--muted);font-style:normal}
+p.ph,div.ph{display:block;padding:.8rem 1rem}
+
+
+/* ---------- Landing: brand, menu and cell together fill the first screen ---------- */
+.landing{height:100vh;height:100svh;min-height:520px;display:grid;grid-template-rows:auto auto minmax(0,1fr);background:#000}
+.brand-band{display:grid;justify-items:center;gap:clamp(.6rem,1.6vh,1.1rem);padding:clamp(1rem,3vh,2rem) 16px clamp(.9rem,2.4vh,1.6rem)}
+.brand-band h1{display:grid;justify-items:center;gap:clamp(.6rem,1.6vh,1.1rem);margin:0}
+.brand-band .mark{height:clamp(96px,20vh,200px);width:auto}
+.lockup{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.8rem 1.6rem}
+.lockup .wordmark{height:clamp(18px,3.6vh,34px);width:auto}
+.lockup .tagline{height:clamp(16px,3.1vh,29px);width:auto}
+.cell{min-height:0;display:flex;justify-content:center;align-items:stretch}
+.cell picture{display:contents}
+.cell img{width:100%;height:100%;max-width:1600px;object-fit:contain;animation:emerge 1.6s ease-out both}
+@keyframes emerge{from{opacity:0}to{opacity:1}}
+
+/* ---------- Menu bar: sits under the logo, sticks to the top once you scroll ---------- */
+.menubar{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.9);backdrop-filter:blur(8px);border-block:1px solid var(--line)}
+.menubar .wrap{display:flex;align-items:center;justify-content:center;min-height:56px;position:relative}
+.menubar ul{display:flex;gap:clamp(1.2rem,3vw,2.6rem);list-style:none}
+.menubar a{color:var(--ink);text-decoration:none;font-size:1.02rem;font-weight:500;letter-spacing:.01em;padding-block:.3rem;border-bottom:2px solid transparent}
+.menubar a:hover,.menubar a[aria-current="page"]{border-bottom-color:var(--light);color:#fff}
+.menubar .home{position:absolute;left:0;display:flex;align-items:center}
+.menubar .home img{height:36px;width:auto}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);font:inherit;padding:.35rem .9rem;border-radius:4px}
+
+/* ---------- Inner pages (Track record) ---------- */
+.page-head{padding-block:clamp(3rem,7vw,5rem) 0}
+.page-head h1{font-stretch:125%;font-weight:600;font-size:clamp(2rem,4.4vw,3.2rem);letter-spacing:.02em;line-height:1.1}
+.page-head p{color:var(--muted);margin-top:.8rem;max-width:var(--measure)}
+.page-head .figures{border-top:0;padding-top:0;margin-top:2.2rem}
+
+/* Sections: title column on the left, content on the right */
+section.block{padding-block:clamp(4rem,9vw,7rem);border-bottom:1px solid var(--line)}
+.split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:2rem 4rem}
+.split > h2{font-stretch:125%;font-weight:600;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.15;letter-spacing:.02em;align-self:start;position:sticky;top:100px}
+.split > h2 small{display:block;font-stretch:100%;font-weight:400;font-size:1rem;color:var(--muted);letter-spacing:0;margin-top:.6rem;max-width:26ch}
+.prose > * + *{margin-top:1.1rem}
+.prose p{max-width:var(--measure)}
+
+/* Expertise: a definition list, not cards */
+.areas{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.areas div{padding:1.4rem 1.4rem 1.6rem 0;border-bottom:1px solid var(--line)}
+.areas div:nth-child(odd){padding-right:2rem}
+.areas div:nth-child(even){padding-left:2rem;border-left:1px solid var(--line)}
+.areas dt{font-weight:600;font-size:1.2rem}
+.areas dd{color:var(--muted);margin-top:.35rem;font-size:1rem}
+.areas .mito dt{color:var(--gold)}
+
+/* Services */
+.services{list-style:none}
+.services li{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1.5rem;padding-block:1.3rem;border-top:1px solid var(--line)}
+.services li:last-child{border-bottom:1px solid var(--line)}
+.services h3{font-size:1.2rem;font-weight:600}
+.services p{color:var(--muted);font-size:1rem}
+
+/* Track record: a real sequence, so a timeline */
+.timeline{list-style:none;position:relative;padding-left:2rem}
+.timeline::before{content:"";position:absolute;left:5px;top:.6rem;bottom:.6rem;width:2px;background:linear-gradient(var(--light),var(--deep))}
+.timeline li{position:relative;padding-bottom:2rem}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:calc(-2rem + 0px);top:.45rem;width:12px;height:12px;border-radius:50%;border:2px solid var(--light);background:#000}
+.timeline time{font-stretch:125%;font-weight:600;color:var(--light);font-size:1.05rem}
+.timeline h3{font-size:1.15rem;font-weight:600;margin-top:.15rem}
+.timeline p{color:var(--muted);font-size:1rem;max-width:var(--measure)}
+.figures{display:flex;flex-wrap:wrap;gap:2.5rem;margin-top:2.8rem;padding-top:2rem;border-top:1px solid var(--line)}
+.figures b{display:block;font-stretch:125%;font-weight:600;font-size:2rem;color:var(--ink);line-height:1.1}
+.figures span{color:var(--muted);font-size:.95rem}
+
+/* Publications */
+.pubs{list-style:none}
+.pubs li{padding-block:1.1rem;border-top:1px solid var(--line);max-width:var(--measure)}
+.pubs li:last-child{border-bottom:1px solid var(--line)}
+.pubs cite{font-style:normal;font-weight:500}
+.pubs .src{display:block;color:var(--muted);font-size:.95rem;margin-top:.2rem}
+
+/* Posts */
+.notes{display:grid;gap:0}
+.note{padding-block:1.4rem;border-top:1px solid var(--line)}
+.note:last-child{border-bottom:1px solid var(--line)}
+.note time{color:var(--muted);font-size:.92rem}
+.note h3{font-size:1.25rem;font-weight:600;margin-top:.2rem}
+.note p{color:var(--muted);font-size:1rem;margin-top:.4rem;max-width:var(--measure)}
+
+/* Contact */
+form{display:grid;gap:1.1rem;max-width:560px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+label{display:grid;gap:.35rem;font-size:.95rem;color:var(--muted)}
+input,textarea{font:inherit;font-size:1rem;color:var(--ink);background:#050A18;border:1px solid #223C7E;border-radius:4px;padding:.7rem .8rem}
+input:focus,textarea:focus{outline:2px solid var(--light);outline-offset:1px;border-color:transparent}
+textarea{min-height:150px;resize:vertical}
+button.send{justify-self:start;font:inherit;font-weight:600;font-size:1rem;background:var(--mid);color:#fff;border:0;border-radius:4px;padding:.8rem 1.4rem;cursor:pointer}
+button.send:hover{background:var(--deep)}
+.form-status{font-size:.95rem;color:var(--light);min-height:1.5em}
+.contact-side{margin-top:2rem;color:var(--muted);font-size:1rem}
+
+/* Footer */
+footer{padding-block:3.5rem 2.5rem}
+.foot{display:grid;grid-template-columns:auto 1fr auto;gap:2rem;align-items:center}
+.foot img{width:150px;height:auto}
+.social{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;justify-content:flex-end}
+.social a{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem .85rem;border:1px solid var(--line);border-radius:4px;color:var(--ink);text-decoration:none;font-size:.95rem}
+.social a:hover{border-color:var(--light)}
+.social svg{width:18px;height:18px;fill:currentColor}
+.legal{grid-column:1/-1;color:var(--muted);font-size:.88rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+
+/* Mobile */
+@media (max-width:860px){
+  .split{grid-template-columns:1fr}
+  .split > h2{position:static}
+  .areas{grid-template-columns:1fr}
+  .areas div,.areas div:nth-child(odd),.areas div:nth-child(even){padding:1.2rem 0;border-left:0}
+  .services li{grid-template-columns:1fr;gap:.3rem}
+  .row{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .social{justify-content:flex-start}
+}
+
+@media (max-width:860px){
+  .menubar .wrap{justify-content:flex-end;min-height:56px}
+  .menubar ul{display:none;position:absolute;top:100%;left:-16px;right:-16px;flex-direction:column;gap:0;background:#000;border-bottom:1px solid var(--line);padding:.4rem 16px .9rem}
+  .menubar ul.open{display:flex}
+  .menubar li a{display:block;padding:.75rem 0;border:0}
+  .menu-btn{display:block}
+  .brand-band{padding-top:2.2rem}
+  .brand-band .mark{height:min(30vh,44vw)}
+  .lockup{flex-direction:column;gap:.9rem}
+  .lockup .wordmark{height:auto;width:min(340px,88vw)}
+  .lockup .tagline{height:auto;width:min(170px,46vw)}
+}
+.timeline h3.ph{display:inline-block}
+.social a.todo{border-style:dashed;color:var(--muted)}
+.pubs cite a{color:var(--ink)}
+.pubs cite a:hover{color:var(--light)}
+.notes h3 a{color:var(--ink);text-decoration:none}
+.notes h3 a:hover{color:var(--light)}
+.post{padding-bottom:clamp(4rem,9vw,7rem)}
+.post .back{margin:0 0 1.2rem}
+.post time{color:var(--muted)}
+.post-body{margin-top:2rem}
+.post-body p{max-width:var(--measure)}
+ol.pubs{list-style:none}
+.pubs .src i{font-style:italic;color:var(--ink)}
+.pubs .tag{display:inline-block;font-size:.82rem;color:var(--gold);border:1px solid #5a4a1c;border-radius:3px;padding:0 .4rem;margin-left:.3rem}
+.pubs .inv{font-size:.88rem;margin-top:.15rem}
+.pat-area{font-size:1.05rem;font-weight:600;color:var(--light);margin:2.4rem 0 .8rem}
+.pat-area:first-child{margin-top:0}
+.figures{gap:2rem 2.5rem}
+.page-head .figures{display:grid;grid-template-columns:repeat(3,minmax(0,max-content));gap:1.6rem 3.5rem}
+@media (max-width:640px){.page-head .figures{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem 1.5rem}}
+.orgs{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 2.5rem;border-top:1px solid var(--line)}
+.orgs li{display:flex;align-items:center;gap:1.2rem;padding-block:1rem;border-bottom:1px solid var(--line)}
+.org-logo{flex:none;width:112px;height:56px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:4px;padding:.4rem}
+.org-logo img{max-width:100%;max-height:100%;object-fit:contain}
+.org-logo:has(.org-empty){background:transparent;border:1px dashed #3A5598}
+.org-empty{font-size:.85rem;color:var(--muted)}
+.org-name{font-weight:500;font-size:1.05rem}
+.org-name a{color:var(--ink);text-decoration:none}
+.org-name a:hover{color:var(--light)}
+@media (max-width:640px){.orgs{grid-template-columns:1fr}}
+.private-label{margin-top:1.8rem;font-weight:500;color:var(--ink)}
+.pills{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.7rem}
+.pills li{border:1px solid #2B4A92;border-radius:999px;padding:.35rem .95rem;font-size:.98rem;color:var(--ink)}
+.org-logo.dark{background:#000;border:1px solid var(--line)}
+/* Logo tiles are pre-made at a fixed size with balanced logo scale */
+.org-logo{width:168px;height:72px;padding:0;overflow:hidden;background:transparent}
+.org-logo img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover}
+.org-logo.dark{border:1px solid var(--line)}
+@media (max-width:640px){.org-logo{width:140px;height:60px}}
+/* Keep a clear gutter so names never run into the next column's logos */
+.orgs{column-gap:4.5rem}
+.orgs li{min-width:0;padding-right:.5rem}
+.org-name{min-width:0;overflow-wrap:anywhere}
+.org-name{overflow-wrap:normal;word-break:normal}
+@media (max-width:1240px){.orgs{grid-template-columns:1fr}}
+.timeline .org-line{color:var(--ink);font-size:1rem;margin-top:.1rem}
+.timeline .points{list-style:disc;padding-left:1.1rem;margin-top:.45rem;color:var(--muted);font-size:.98rem;max-width:var(--measure)}
+.timeline .points li{padding-bottom:.3rem}
+.timeline .points li::before{content:none}
+
+/* Headshot under the About title */
+.split > h2 .headshot{display:block;width:200px;aspect-ratio:4/5;height:auto;object-fit:cover;border-radius:6px;border:1px solid var(--line);margin:1.2rem 0 .3rem}
+@media (max-width:860px){.split > h2 .headshot{width:160px}}
+
+/* Footer: larger logo mark */
+.foot img.foot-mark{width:auto;height:120px}
+@media (max-width:640px){.foot img.foot-mark{height:96px}}
+
+/* v18: headshot and name centred on one vertical axis */
+.split > h2 .headshot{margin-left:0;margin-right:0}
+.split > h2 .headshot + small{width:200px;max-width:none;text-align:center}
+@media (max-width:860px){.split > h2 .headshot + small{width:160px}}
+
+/* v18: larger social links, closer in weight to the logo mark */
+.social{gap:.9rem}
+.social a{gap:.75rem;padding:.9rem 1.4rem;font-size:1.2rem;border-radius:8px}
+.social svg{width:40px;height:40px}
+@media (max-width:640px){.social a{padding:.7rem 1.1rem;font-size:1.05rem}.social svg{width:30px;height:30px}}
+
+/* v18.6: Services page text in the logo's light blue ("Targeted Solutions" line) */
+#services .services p,
+#services .split > h2 small{color:#84AAF1}
+
+/* v18.9: inner pages (all except Home) - logo matches the footer logo; menu scaled to suit */
+.menubar-inner .wrap{min-height:152px}
+.menubar-inner .home img{height:120px}
+.menubar-inner ul{gap:clamp(1.4rem,3.2vw,3rem)}
+.menubar-inner a{font-size:1.3rem}
+@media (max-width:860px){
+  .menubar-inner .wrap{min-height:112px}
+  .menubar-inner .home img{height:88px}
+  .menubar-inner a{font-size:1.15rem}
+}
+
+/* v18.10: Home - company name and tagline as text in the site font, tagline centred below */
+.brand-band .lockup{flex-direction:column;gap:.35rem}
+.brand-band .company{font-stretch:125%;font-weight:600;font-size:clamp(1.6rem,4.9vh,2.8rem);letter-spacing:.03em;line-height:1.15;color:var(--ink);text-align:center}
+.brand-band .tagline-text{font-weight:500;font-size:clamp(1rem,2.7vh,1.5rem);color:#84AAF1;text-align:center}
+@media (max-width:860px){.brand-band .company{font-size:1.45rem}.brand-band .tagline-text{font-size:1.1rem}}
+
+/* v18.14: Track record page - blue text in the logo's light blue (matches Services) */
+.page-track-record .timeline time,
+.page-track-record .pat-area,
+.page-track-record .page-head p,
+.page-track-record .figures span,
+.page-track-record .timeline p,
+.page-track-record .timeline .points,
+.page-track-record .pubs .src,
+.page-track-record .services p,
+.page-track-record .split > h2 small{color:#84AAF1}
+
+/* v18.15: posts - embedded video and further-reading list */
+.post-body .video{position:relative;width:100%;max-width:820px;aspect-ratio:16/9;margin:1.6rem 0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#000}
+.post-body .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.post-body .refs{margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.95rem;color:#84AAF1;max-width:var(--measure)}
+.post-body .refs ul{padding-left:1.1rem}
+.post-body .refs li{margin-top:.7rem}
+.post-body .refs strong{color:var(--ink)}
+.post-body a{color:var(--light)}
+
+/* v18.17: YouTube thumbnail with play button (click to play) */
+.post-body .video a{position:absolute;inset:0;display:block}
+.post-body .video img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9;transition:opacity .2s}
+.post-body .video a:hover img{opacity:1}
+.post-body .video .play{position:absolute;left:50%;top:50%;width:72px;height:50px;margin:-25px 0 0 -36px;border-radius:12px;background:rgba(0,0,0,.75);border:2px solid #84AAF1}
+.post-body .video .play::after{content:"";position:absolute;left:29px;top:13px;border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #84AAF1}

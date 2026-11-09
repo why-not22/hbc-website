@@ -1,0 +1,27 @@
+---
+layout: default
+title: Contact
+nav: contact
+permalink: /contact/
+---
+{% include menu.html %}
+<main>
+  <section class="block" id="contact">
+    <div class="wrap split">
+      <h2>Contact<small>{% include t.html text=site.data.contact.intro %}</small></h2>
+      <div>
+        <form id="contact-form" action="{% if site.formspree_id != '' %}https://formspree.io/f/{{ site.formspree_id }}{% else %}#{% endif %}" method="POST">
+          <div class="row">
+            <label>Name<input name="name" autocomplete="name" required></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          </div>
+          <label>Organization<input name="organization" autocomplete="organization"></label>
+          <label>How can I help?<textarea name="message" required></textarea></label>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <button class="send" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

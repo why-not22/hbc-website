@@ -1,0 +1,19 @@
+---
+layout: default
+title: Services
+nav: services
+permalink: /services/
+---
+{% include menu.html %}
+<main>
+  <section class="block" id="services">
+    <div class="wrap split">
+      <h2>Services<small>How an HBC engagement can help you.</small></h2>
+      <ul class="services">
+        {%- for item in site.data.services %}
+        <li><h3>{% include t.html text=item.name %}</h3><p>{% include t.html text=item.description %}</p></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+</main>

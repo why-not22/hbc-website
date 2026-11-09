@@ -1,0 +1,18 @@
+# SERVICES section: what clients can hire HBC for. Add, remove or reorder items.
+- name: Scientific diligence and asset evaluation
+  description: "Independent assessment of biotech assets and platforms for investors and executives."
+
+- name: R&D and development strategy
+  description: "Platform positioning, program priorities, and planning from concept through pre-IND for therapeutics or Pre-Submission for diagnostics."
+
+- name: Company and program building
+  description: "Financing strategy, IP portfolio, CRO and CDMO partnerships, and board and investor communication."
+
+- name: AI-augmented research and planning
+  description: "Expert-directed generative and agentic AI as a research and planning partner across the path from concept to pre-IND: asset ideation, literature and competitive synthesis, feasibility assessment, and program design. Three decades of scientific judgment set the questions and vet the answers, so clients get speed without sacrificing rigor."
+
+- name: Fractional scientific leadership
+  description: "Building and executing R&D programs with a rapid, critical-path focus, drawing on 18 years of leading R&D teams to successful outcomes."
+
+- name: Boston biotech ecosystem entry for government partners
+  description: "Expert training and experience, combined with an extensive network, enables government agencies and their companies to establish a footprint in the Boston biotech ecosystem and accomplish their goals."

@@ -1,0 +1,15 @@
+# EXPERTISE section. Add, remove or reorder items; each item starts with "- name:".
+# highlight: true colors the name gold (used for mitochondrial biology).
+- name: Early-stage drug discovery
+  description: "TODO: One line on scope."
+- name: Synthetic biology
+  description: "TODO: One line on scope."
+- name: Genomics
+  description: "TODO: One line on scope."
+- name: Lipid-based drug delivery
+  description: "TODO: One line on scope."
+- name: Mitochondrial biology
+  description: "TODO: One line on scope."
+  highlight: true
+- name: Company building
+  description: "TODO: One line on scope."

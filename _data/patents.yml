@@ -1,0 +1,156 @@
+# PATENTS on the Track record page, grouped by area. Newest area at the top.
+# filed = year filed; granted = year granted (leave "" if not granted). related is optional.
+- area: Endolytix Technology — intracellular anti-infective therapeutics
+  patents:
+    - title: Compositions and methods for the treatment of actinomycetia infections
+      number: US 2025/0302926 A1
+      filed: "2023"
+      granted: ""
+      inventors: Holder J, Bartlett H, Glickman C, Barrios S, Solomon K, Dawson CC
+      link: https://patents.google.com/patent/US20250302926A1/en
+    - title: Compositions and methods for the treatment of actinomycetia infections
+      number: US 2025/0249079 A1
+      filed: "2023"
+      granted: ""
+      inventors: Holder J, Bartlett H, Barrios S, Dawson CC, Solomon K, Glickman C
+      link: https://patents.google.com/patent/US20250249079A1/en
+    - title: Compositions and methods for the treatment of intracellular bacterial infections
+      number: US 2023/0120142 A1
+      filed: "2021"
+      granted: ""
+      inventors: Holder J, Magnant GP
+      link: https://patents.google.com/patent/US20230120142A1/en
+    - title: Compositions and methods for the treatment of intracellular bacterial infections
+      number: US 2023/0117606 A1
+      filed: "2021"
+      granted: ""
+      inventors: Holder J, Magnant GP
+      link: https://patents.google.com/patent/US20230117606A1/en
+    - title: Compositions and methods for the treatment of intracellular bacterial infections
+      number: US 2023/0106864 A1
+      filed: "2021"
+      granted: ""
+      inventors: Holder J, Magnant GP
+      link: https://patents.google.com/patent/US20230106864A1/en
+
+- area: Draper — phage engineering and diagnostic systems
+  patents:
+    - title: Bacteriophage engineering via semi-synthesis
+      number: US 11,891,630 B2
+      filed: "2018"
+      granted: "2024"
+      inventors: McFarland KA, Rogers MT, McBrine C, Holder JW
+      link: https://patents.google.com/patent/US11891630B2/en
+    - title: "Phage engineering: protection by circularized intermediate"
+      number: US 11,535,843 B2
+      filed: "2018"
+      granted: "2022"
+      inventors: McBrine C, Holder J
+      related: "Continuation US 2023/0383286 A1, filed 2022"
+      link: https://patents.google.com/patent/US11535843B2/en
+    - title: Automated bacteria identification and antibiotic susceptibility profiling device
+      number: US 11,407,970
+      filed: "2019"
+      granted: "2022"
+      inventors: Holder J, Dow P
+      link: https://patents.justia.com/patent/11407970
+    - title: System and method of bacterial cell purification
+      number: US 11,326,143
+      filed: "2019"
+      granted: "2022"
+      inventors: Dow P, Mesyngier N, Kotz K, Kourepenos G, Fiering JO, Holder JW
+      link: https://patents.justia.com/patent/11326143
+    - title: Bacteria identification and antibiotic susceptibility profiling device
+      number: US 10,913,987 B2
+      filed: "2017"
+      granted: "2021"
+      inventors: Holder JW, Fiering JO
+      link: https://patents.google.com/patent/US10913987B2/en
+    - title: Bacteriophage engineering methods
+      number: US 10,815,535 B2
+      filed: "2017"
+      granted: "2020"
+      inventors: Holder J, McBrine C, Gruszka S, Rogers M, Billings N
+      link: https://patents.google.com/patent/US10815535B2/en
+    - title: Bacteriophage recombination followed by blockage of non-recombinant bacteriophage replication
+      number: US 10,494,638 B2
+      filed: "2018"
+      granted: "2019"
+      inventors: Holder J, McBrine C, Rogers M, Billings N, Gruska S, Tilley L
+      link: https://patents.google.com/patent/US10494638B2/en
+    - title: Recombinant B11 bacteriophages and uses thereof
+      number: US 10,329,539
+      filed: "2018"
+      granted: "2019"
+      inventors: McBrine C, Kourepenos G, Dow P, Holder J
+      related: "Continuation US 10,900,025 B2, filed 2019, granted 2021"
+      link: https://patents.justia.com/patent/10329539
+    - title: Recombinant K and 812 bacteriophages and uses thereof
+      number: US 10,260,083 B1
+      filed: "2018"
+      granted: "2019"
+      inventors: Cavanagh P, Bartlett H, McFarland KA, Raustad NE, Gruszka S, Holder J
+      link: https://patents.google.com/patent/US10260083B1/en
+    - title: Recombinant K1-5 bacteriophages and uses thereof
+      number: US 10,202,610
+      filed: "2018"
+      granted: "2019"
+      inventors: McBrine C, Holder J
+      link: https://patents.justia.com/patent/10202610
+    - title: "Composition of matter: engineering of phage K1E"
+      number: US 10,174,295
+      filed: "2018"
+      granted: "2019"
+      inventors: Gruszka S, Holder J
+      related: "Continuation US 11,268,072 B2 (Escherichia coli phage K1E), filed 2019, granted 2022"
+      link: https://patents.justia.com/patent/10174295
+    - title: Recombinant K2 bacteriophages and uses thereof
+      number: US 10,174,294 B1
+      filed: "2018"
+      granted: "2019"
+      inventors: McBrine C, Kourepenos G, Holder J
+      link: https://patents.google.com/patent/US10174294B1/en
+    - title: Recombinant PB1 bacteriophages and uses thereof
+      number: US 10,174,293 B1
+      filed: "2018"
+      granted: "2019"
+      inventors: Gruszka S, Dow P, Holder J
+      link: https://patents.google.com/patent/US10174293B1/en
+    - title: Detection and identification of bacteria and determination of antibiotic susceptibility using bacteriophage and reporter molecules
+      number: US 2019/0078133 A1
+      filed: "2018"
+      granted: ""
+      inventors: Cavanagh P, Christensen Q, Kotz KT, Holder J
+      link: https://patents.google.com/patent/US20190078133A1/en
+    - title: Modular chemical sensor platform
+      number: US 2018/0265833 A1
+      filed: "2016"
+      granted: ""
+      inventors: Holder JW, Larsen RA, Fumo J, Coppeta J, Soong R, Billings-Siuti AN
+      link: https://patents.google.com/patent/US20180265833A1/en
+
+- area: Sample6 Technologies — recombinant phage diagnostics
+  patents:
+    - title: Methods of making recombinant phage, compositions and articles of manufacture of same for bacterial detection
+      number: US 9,340,817 B2
+      filed: "2014"
+      granted: "2016"
+      inventors: Koeris MS, Shivers RP, Brownell DR, Holder JW, Bowers JL
+      related: "Continuation US 10,273,460 B2 (Recombinant phage for listeria detection), filed 2016, granted 2019"
+      link: https://patents.google.com/patent/US9340817B2/en
+    - title: Recombinant phage and methods
+      number: US 9,234,227 B2
+      filed: "2012"
+      granted: "2016"
+      inventors: Lu TKT, Koeris MS, Chevalier BS, Holder JW, McKenzie GJ, Brownell DR
+      related: "Continuation US 2016/0122729 A1, filed 2016"
+      link: https://patents.google.com/patent/US9234227B2/en
+
+- area: MIT — microbial lipid production
+  patents:
+    - title: Production of triacylglycerides, fatty acids, and their derivatives
+      number: US 8,679,782 B2
+      filed: "2010"
+      granted: "2014"
+      inventors: Sinskey AJ, MacEachran D, Kurosawa K, Boccazzi P, Holder JW
+      link: https://patents.google.com/patent/US8679782B2/en

@@ -1,0 +1,16 @@
+<footer>
+  <div class="wrap foot">
+    <img class="foot-mark" src="/assets/logo-mark.svg" alt="{{ site.title }} logo">
+    <span></span>
+    <ul class="social" aria-label="Social links">
+      {%- for s in site.data.social %}
+      {%- if s.url contains "TODO" %}
+      <li><a class="todo" href="#" aria-label="{{ s.name }} (link to add)">{% include icon.html name=s.icon %}{{ s.name }}</a></li>
+      {%- else %}
+      <li><a href="{{ s.url }}" target="_blank" rel="noopener">{% include icon.html name=s.icon %}{{ s.name }}</a></li>
+      {%- endif %}
+      {%- endfor %}
+    </ul>
+    <p class="legal">© {{ site.time | date: "%Y" }} Holder Biotech Consulting LLC. holderbiotechconsulting.com<br>The Holder Biotech Consulting logo and cell image are proprietary, purchased by Holder Biotech Consulting LLC, and may not be copied or reused without permission.</p>
+  </div>
+</footer>

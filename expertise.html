@@ -1,0 +1,20 @@
+---
+layout: default
+published: false
+title: Expertise
+nav: expertise
+permalink: /expertise/
+---
+{% include menu.html %}
+<main>
+  <section class="block" id="expertise">
+    <div class="wrap split">
+      <h2>Expertise</h2>
+      <dl class="areas">
+        {%- for item in site.data.expertise %}
+        <div{% if item.highlight %} class="mito"{% endif %}><dt>{% include t.html text=item.name %}</dt><dd>{% include t.html text=item.description %}</dd></div>
+        {%- endfor %}
+      </dl>
+    </div>
+  </section>
+</main>

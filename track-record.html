@@ -1,0 +1,123 @@
+---
+layout: default
+title: Track record
+nav: track-record
+permalink: /track-record/
+description: Track record of Jason Holder, covering research, publications, patents, company building and consulting.
+---
+<!-- Layout only. To change the words, edit _data/track_record.yml, _data/publications.yml and _data/patents.yml. -->
+{% include menu.html %}
+<main class="page-track-record">
+  <section class="wrap page-head">
+    <h1>Track record</h1>
+    <p>{% include t.html text=site.data.track_record.summary %}</p>
+    <div class="figures">
+      {%- for f in site.data.track_record.figures %}
+      <div><b>{{ f.value }}</b><span>{{ f.label }}</span></div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="block" id="leadership">
+    <div class="wrap split">
+      <h2>R&amp;D leadership</h2>
+      <ul class="services">
+        {%- for l in site.data.track_record.leadership %}
+        <li><h3>{{ l.org }}</h3><p>{{ l.detail }}</p></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="organizations">
+    <div class="wrap split">
+      <h2>Organizations</h2>
+      <ul class="orgs">
+        {%- for o in site.data.organizations %}
+        <li>
+          <span class="org-logo{% if o.dark %} dark{% endif %}">{% if o.logo != "" %}<img src="{{ o.logo }}" alt="{{ o.name }} logo">{% else %}<span class="org-empty">Logo</span>{% endif %}</span>
+          <span class="org-name">{% if o.link != "" %}<a href="{{ o.link }}">{{ o.name }}</a>{% else %}{{ o.name }}{% endif %}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="funding">
+    <div class="wrap split">
+      <h2>Research funding<small>Support for my research programs.</small></h2>
+      <div>
+        <ul class="orgs">
+          {%- for o in site.data.funding.organizations %}
+          <li>
+            <span class="org-logo{% if o.dark %} dark{% endif %}">{% if o.logo != "" %}<img src="{{ o.logo }}" alt="{{ o.name }} logo">{% else %}<span class="org-empty">Logo</span>{% endif %}</span>
+            <span class="org-name">{% if o.link != "" %}<a href="{{ o.link }}">{{ o.name }}</a>{% else %}{{ o.name }}{% endif %}</span>
+          </li>
+          {%- endfor %}
+        </ul>
+        <p class="private-label">Private investment</p>
+        <ul class="pills">
+          {%- for x in site.data.funding.private %}<li>{{ x }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap split">
+      <h2>Career<small>Most recent first.</small></h2>
+      <ol class="timeline">
+        {%- for c in site.data.track_record.career %}
+        <li><time>{% include t.html text=c.year %}</time><h3>{% include t.html text=c.title %}</h3>{% if c.org %}<p class="org-line">{{ c.org }}</p>{% endif %}{% if c.description %}<p>{% include t.html text=c.description %}</p>{% endif %}{% if c.points %}<ul class="points">{% for x in c.points %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}</li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="thesis">
+    <div class="wrap split">
+      <h2>Thesis</h2>
+      {%- assign th = site.data.track_record.thesis %}
+      <ul class="pubs">
+        <li>
+          <cite>{% if th.link != "" %}<a href="{{ th.link }}">{{ th.title }}</a>{% else %}{{ th.title }}{% endif %}</cite>
+          <span class="src">{{ th.author }}. {% include t.html text=th.degree %}, {{ th.institution }}, {% include t.html text=th.year %}.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="publications">
+    <div class="wrap split">
+      <h2>Publications<small>{{ site.data.publications | size }} peer-reviewed scientific publications, newest first.</small></h2>
+      <ol class="pubs">
+        {%- for p in site.data.publications %}
+        <li>
+          <cite>{% if p.link != "" %}<a href="{{ p.link }}">{% include t.html text=p.title %}</a>{% else %}{% include t.html text=p.title %}{% endif %}</cite>
+          <span class="src">{% include t.html text=p.authors %}{% unless p.authors contains "et al." %}.{% endunless %} <i>{{ p.journal }}</i>. {{ p.year }}{% if p.details %};{{ p.details }}{% endif %}.{% if p.note %} <span class="tag">{{ p.note }}</span>{% endif %}</span>
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="patents">
+    <div class="wrap split">
+      <h2>Patents<small>U.S. patent filings and grants, grouped by organization.</small></h2>
+      <div>
+        {%- for group in site.data.patents %}
+        <h3 class="pat-area">{{ group.area }}</h3>
+        <ul class="pubs">
+          {%- for p in group.patents %}
+          <li>
+            <cite>{% if p.link != "" %}<a href="{{ p.link }}">{% include t.html text=p.title %}</a>{% else %}{% include t.html text=p.title %}{% endif %}</cite>
+            <span class="src">{{ p.number }}. Filed {{ p.filed }}{% if p.granted != "" %}; granted {{ p.granted }}{% endif %}.{% if p.related %} {{ p.related }}.{% endif %}</span>
+            {%- if p.inventors %}<span class="src inv">Inventors: {{ p.inventors }}</span>{% endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>

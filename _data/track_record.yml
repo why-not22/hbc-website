@@ -1,0 +1,125 @@
+# TRACK RECORD page: summary, headline figures and career entries.
+# Career entries show in the order listed here, so keep the newest at the top.
+summary: Led R&D efforts of more than 17 people internationally at MIT, the Broad Institute, Draper and Endolytix, including company formation and raising $30M to fund my R&D programs.
+figures:
+  - value: "30+"
+    label: years in biomedical research
+  - value: "$30M"
+    label: raised for R&D
+  - value: "17+"
+    label: people led in R&D, internationally
+  - value: "11"
+    label: peer-reviewed scientific publications
+  - value: "28"
+    label: U.S. patent applications filed
+  - value: "19"
+    label: U.S. patents granted
+leadership:
+  - org: MIT – Broad Institute
+    detail: "Directed a 17-person international collaboration involving MIT, the Broad Institute, and University of York (UK)"
+  - org: Draper
+    detail: "Led 17+ person R&D teams"
+  - org: Endolytix Technology
+    detail: "Led 17+ person R&D teams"
+career:
+  - year: "September 2025 – Present"
+    title: "Advisor to the Richi Foundation whose mission is to cure childhood cancer"
+    points:
+      - "Helping Spanish biotechs in many ways including establishing work expanding these companies"
+      - "Working with the Spanish Ministry of Economy, Trade, and Business to establish models of integration for Spanish biotech into the Boston ecosystem"
+  - year: "July 2026 \u2013 Present"
+    title: "Biology LLM Training\u2014 Contractor to Snorkel"
+    points:
+      - "Conceived and built multidisciplinary and multi-hop biological research tasks for LLM training and evaluation"
+      - "Consolidated biological evidence from 30 years of research into structured tasks with measurable outcomes"
+  - year: "July 2025 \u2013 Present"
+    title: "Founder & Principal Consultant"
+    org: "Holder Biotech Consulting, LLC \u2014 Boston, MA"
+    description: "Provides strategic scientific and commercialization guidance to biotechnology companies spanning translational therapeutics, platform innovation with a focus but not limited to engineered biologics."
+    points:
+      - "Advise biotechnology executives and investors on platform positioning, translational strategy, scientific diligence, and R & D planning"
+      - "Support evaluation of emerging biotechnology assets and innovation strategy"
+      - "Provide strategic guidance on scientific differentiation, development prioritization, and organizational growth planning"
+      - "Develop AI solutions to complex biological and pharmaceutical problems from ideation to market capitalization"
+      - "Use generative- and agentic-AI to ideate therapeutic assets and companies and assess scientific feasibility across biological disciplines"
+      - "Working with childhood cancer foundation (Richi Foundation) to assist portfolio companies advance drug assets and company expansions into the Boston ecosystem."
+  - year: "February 2020 \u2013 May 2025"
+    title: "Co-Founder & Chief Scientific Officer"
+    org: "Endolytix Technology, Inc. \u2014 Beverly, MA"
+    description: "Co-founded and led the scientific and operational development of a biotechnology platform company focused on engineered biologic therapeutics for targeted delivery systems to the cells and organelles within patients to combat mycobacterial infections"
+    points:
+      - "Directed enterprise scientific strategy and platform innovation as sole C-suite executive for more than five years"
+      - "Built and led multidisciplinary R&D organizations spanning fermentation, protein science, synthetic biology, lipid particle formulation, assay development, and computational biology"
+      - "Developed a novel targeted liposomal biologic platform integrating engineered enzyme systems with advanced delivery technologies for Non-Tuberculous Mycobacteria (NTM) therapeutics"
+      - "Advanced platform-enabled program from early concept through translational in vitro and murine validation studies"
+      - "Led process development for scaled therapeutic manufacturing processes by more than 250-fold"
+      - "Secured more than $23M in venture financing through investor engagement, scientific strategy development, and executive presentations"
+      - "Led scientific communication and strategic reporting to the Board of Directors, investors, scientific advisors, and external stakeholders"
+      - "Directed development of the company intellectual property portfolio in partnership with legal counsel"
+      - "Established external scientific collaborations, CRO partnerships, CDMO relationships, and GMP-aligned development pathways supporting long-term scalability and commercialization readiness"
+      - "Guided organizational strategy across scientific development, operational prioritization, and capital-efficient platform growth"
+  - year: "September 2019 \u2013 February 2020"
+    title: "Consultant"
+    org: "Zwanziger Family Ventures \u2014 Swampscott, MA"
+    points:
+      - "Conceived and ideated the foundational scientific strategy that evolved into Endolytix Technology"
+      - "Designed targeted biologic delivery concepts integrating synthetic biology, enzymology, molecular engineering, and lipid-based therapeutic platforms"
+      - "Developed early-stage platform architecture focused on cell- and organelle-specific therapeutic targeting"
+  - year: "May 2015 \u2013 July 2019"
+    title: "Principal Member of Technical Staff"
+    org: "Draper \u2014 Cambridge, MA"
+    description: "Scientific and technical leader within advanced biotechnology and synthetic biology initiatives focused on translational diagnostics and engineered biological systems."
+    points:
+      - "Led development of rapid pathogen identification and antibiotic susceptibility technologies using genome-engineered luminescent bacteriophage systems"
+      - "Directed multidisciplinary efforts integrating synthetic biology, microfluidics, molecular diagnostics, and translational assay systems"
+      - "Led scientific teams developing point-of-care technologies for bloodstream infection diagnostics"
+      - "Secured more than $6M in strategic internal innovation funding supporting advanced biotechnology platform development"
+      - "Contributed to commercialization and licensing activities for internally developed platform technologies"
+      - "This technology was licensed by Draper in 2024"
+  - year: "October 2016 \u2013 October 2017"
+    title: "Group Leader, Synthetic Biology"
+    org: "Draper \u2014 Cambridge, MA"
+    points:
+      - "Founded and led Draper's Synthetic Biology Group"
+      - "Directed multiple synthetic biology and molecular engineering programs across translational biotechnology applications"
+      - "Expanded organizational capabilities in engineered biological systems and platform innovation"
+  - year: "January 2014 \u2013 January 2015"
+    title: "Co-Founder & Chief Scientific Officer"
+    org: "Pharogen, Inc. \u2014 Cambridge, MA"
+    points:
+      - "Designed rapid antibiotic susceptibility diagnostic technology and associated commercialization strategies"
+      - "Led scientific ideation and diligence"
+  - year: "October 2013 \u2013 March 2014"
+    title: "Contract Research Scientist"
+    org: "Broad Institute \u2014 Cambridge, MA"
+    points:
+      - "Conducted comparative genomics and metabolic engineering analyses involving Streptomyces species and pathogenic fungi"
+      - "Supported computational and systems biology initiatives integrating genomic and metabolic datasets"
+  - year: "August 2011 \u2013 March 2013"
+    title: "Senior Scientist"
+    org: "Sample6 Technologies (formerly Novophage Inc.) \u2014 Boston, MA"
+    points:
+      - "Ideated the development of a luminescent bacteriophage-based rapid bacterial detection platform for food safety"
+      - "Supported advancement of technology that was later commercialized as Sample6 DETECT and subsequently acquired"
+  - year: "2007 \u2013 2011"
+    title: "Postdoctoral Fellow"
+    org: "Massachusetts Institute of Technology (MIT) \u2014 Cambridge, MA"
+    points:
+      - "Led collaborative OMICs and metabolic engineering programs focused on microbial biofuel production"
+      - "Directed a 17-person international collaboration involving MIT, the Broad Institute, and University of York (UK)"
+  - year: "1998 \u2013 2006"
+    title: "PhD Researcher"
+    org: "Johns Hopkins University School of Medicine \u2014 Baltimore, MD"
+    points:
+      - "Defined molecular mechanisms governing site- and orientation-specific transposition with relevance to genome engineering and targeted DNA integration technologies"
+      - "Specialized in molecular biology, biochemistry, microbial systems, and protein-DNA complex biology, DNA Integration"
+  - year: "1995–1998"
+    title: "Mitochondrial biogenesis research, Johns Hopkins"
+    description: "Genetic, cell biological, and biochemical characterization of mitochondrial biogenesis, fusion, and fission of this mighty organelle that is the center hub for many cellular activities well beyond solely ATP production."
+thesis:
+  title: Assembly and Architecture of Tn7 Transposomes
+  author: Jason W. Holder
+  institution: Johns Hopkins University School of Medicine
+  degree: "PhD — Biochemistry, Cell & Molecular Biology (BCMB program at JHMI)"
+  year: "2006"
+  link: ""

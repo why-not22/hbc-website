@@ -1,0 +1,20 @@
+---
+published: false
+layout: default
+title: About
+nav: about
+permalink: /about/
+---
+{% include menu.html %}
+<main>
+  <section class="block" id="about">
+    <div class="wrap split">
+      <h2>About{% if site.data.about.headshot and site.data.about.headshot != "" %}<img class="headshot" src="{{ site.data.about.headshot }}" alt="Jason Holder PhD">{% endif %}<small>{% include t.html text=site.data.about.founder_line %}</small></h2>
+      <div class="prose">
+        {%- for p in site.data.about.paragraphs %}
+        <p>{% include t.html text=p %}</p>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>

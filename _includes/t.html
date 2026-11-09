@@ -1,0 +1,1 @@
+{%- if include.text contains "TODO:" -%}<span class="ph">{{ include.text | remove_first: "TODO: " | remove_first: "TODO:" }}</span>{%- else -%}{{ include.text }}{%- endif -%}

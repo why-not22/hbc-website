@@ -1,0 +1,11 @@
+# SOCIAL links in the footer. Delete an item to remove that link.
+# icon must be one of: linkedin, orcid, scholar, github
+- name: LinkedIn
+  icon: linkedin
+  url: https://www.linkedin.com/in/jason-holder-57444b6
+- name: ORCID
+  icon: orcid
+  url: https://orcid.org/0009-0008-7459-5867
+- name: GitHub
+  icon: github
+  url: https://github.com/why-not22

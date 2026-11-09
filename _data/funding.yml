@@ -1,0 +1,21 @@
+# RESEARCH FUNDING on the Track record page.
+# organizations: shown with a logo slot (put files in assets/orgs/ and enter the path).
+# private: investor types, shown as labels without logos.
+organizations:
+  - name: National Institutes of Health (NIH)
+    logo: /assets/orgs/nih.png
+    link: https://www.nih.gov
+  - name: Howard Hughes Medical Institute
+    logo: /assets/orgs/hhmi.png
+    dark: true
+    link: https://www.hhmi.org
+  - name: Cambridge-MIT Universities Partnership Program
+    logo: /assets/orgs/cambridge-mit.png
+    link: ""
+  - name: Indiana University
+    logo: /assets/orgs/indiana.png
+    link: https://www.iu.edu
+private:
+  - Angel investors
+  - Family office
+  - Venture capital

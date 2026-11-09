@@ -1,0 +1,28 @@
+# ORGANIZATIONS on the Track record page, shown with a logo beside each name.
+# logo: put the image file in assets/orgs/ and enter its path, e.g. /assets/orgs/draper.svg
+# Leave logo "" to show an empty logo slot. dark: true puts the logo on a black tile instead of white. Order = display order.
+- name: Endolytix Technology
+  logo: /assets/orgs/endolytix-tile.png
+  dark: true
+  link: ""
+- name: Colorado State University
+  logo: /assets/orgs/csu.png
+  link: https://www.colostate.edu
+- name: University of York (UK)
+  logo: /assets/orgs/york.png
+  link: https://www.york.ac.uk
+- name: Draper
+  logo: /assets/orgs/draper.png
+  link: https://www.draper.com
+- name: Sample6 Technologies
+  logo: /assets/orgs/sample6.png
+  link: ""
+- name: Broad Institute
+  logo: /assets/orgs/broad.png
+  link: https://www.broadinstitute.org
+- name: Massachusetts Institute of Technology
+  logo: /assets/orgs/mit.png
+  link: https://www.mit.edu
+- name: Johns Hopkins University School of Medicine
+  logo: /assets/orgs/jhu.png
+  link: https://www.jhu.edu

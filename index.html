@@ -1,0 +1,36 @@
+---
+layout: default
+landing: true
+---
+<!-- Layout only. To change the words, edit the files in the _data folder. -->
+<div class="landing" id="top">
+  <header class="brand-band">
+    <h1>
+      <img class="mark" src="/assets/logo-mark.svg" width="401" height="422" alt="">
+      <span class="lockup">
+        <span class="company">Holder Biotech Consulting</span>
+        <span class="tagline-text">Targeted Solutions</span>
+      </span>
+    </h1>
+  </header>
+  {% include menu.html %}
+  <div class="cell">
+    <picture>
+      <source srcset="/assets/cell.webp" type="image/webp">
+      <img src="/assets/cell.jpg" width="1280" height="720" alt="Illustration of a eukaryotic cell showing the nucleus, mitochondria and other organelles">
+    </picture>
+  </div>
+</div>
+
+<main>
+  <section class="block" id="about">
+    <div class="wrap split">
+      <h2>About{% if site.data.about.headshot and site.data.about.headshot != "" %}<img class="headshot" src="{{ site.data.about.headshot }}" alt="Jason Holder PhD">{% endif %}<small>{% include t.html text=site.data.about.founder_line %}</small></h2>
+      <div class="prose">
+        {%- for p in site.data.about.paragraphs %}
+        <p>{% include t.html text=p %}</p>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>

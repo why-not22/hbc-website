@@ -1,0 +1,17 @@
+# Site-wide settings
+title: Holder Biotech Consulting
+description: Scientific strategy, IP and company building for early-stage biotech.
+url: https://holderbiotechconsulting.com
+permalink: /posts/:title/
+
+# Contact form: paste your Formspree form ID here once it exists (leave blank for now)
+formspree_id: "maeegylp"
+# Visit tracking: paste your Cloudflare Web Analytics token here once the site is live
+cloudflare_analytics_token: ""
+
+exclude: [README.md]
+
+# RSS feed for post followers (built by GitHub Pages at /feed.xml)
+plugins: [jekyll-feed]
+feed:
+  path: feed.xml

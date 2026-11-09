@@ -1,0 +1,13 @@
+# ABOUT section on the home page: who HBC is and why to trust it (2-3 sentences).
+# Tip: any text that starts with "TODO: " shows as a dashed placeholder box on the site.
+founder_line: "Jason Holder PhD"
+# headshot: path to the photo shown under the About title, e.g. /assets/headshot.jpg (leave "" to hide)
+headshot: /assets/headshot.png
+paragraphs:
+  - "Holder Biotech Consulting (HBC) helps biotech founders, investors, scientific leaders, foundations, and government partners turn promising ideas and assets into financed product development programs. Let's find your targeted solution today!"
+
+  - "HBC clients work with a scientist-operator who has handled the full startup stack: ideation, R&D strategy, financing (multiple tens of millions of dollars raised across his career through venture, angel, family office, and competitive awards), CRO and CDMO partnerships, service as a board member and primary contributor to board meetings, investor communication, and multidisciplinary team building and leadership. As an inventor on 28 U.S. patent filings (19 granted), Dr. Holder helps companies shape their IP strategy before engaging counsel, saving legal costs and getting the protection they actually need. Expert-driven use of generative and agentic AI to evaluate assets and opportunities and turn them into solid R&D programs. Based in Boston, MA."
+
+  - "Founder Jason Holder PhD brings more than 30 years of biomedical R&D and a rare breadth. Where most scientists spend a career in one or a few fields, he has made an impact in seven, from mitochondrial biology, transposition and genome engineering to functional genomics, rapid diagnostics, and targeted drug delivery of biologics. That range gives him the flexibility to work across many areas, built on training at top institutions, including a PhD from the Biochemistry, Cell, and Molecular Biology program at Johns Hopkins University School of Medicine."
+
+  - "Commercial R&D programs built and led by Dr. Holder include lipid-based targeted delivery of biologics, in particular liposome encapsulation of enzyme cocktails; rapid identification and antibiotic susceptibility testing of bloodborne bacterial pathogens at the point of care; and rapid food safety diagnostics. His consulting and advisory work reaches well beyond these areas."
