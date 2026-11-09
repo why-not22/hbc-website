@@ -21,11 +21,16 @@ description: Track record of Jason Holder, covering research, publications, pate
   <section class="block" id="leadership">
     <div class="wrap split">
       <h2>R&amp;D leadership</h2>
-      <ul class="services">
-        {%- for l in site.data.track_record.leadership %}
-        <li><h3>{{ l.org }}</h3><p>{{ l.detail }}</p></li>
-        {%- endfor %}
-      </ul>
+      <div>
+        {%- if site.data.track_record.leadership_note %}
+        <p class="lead-note">{{ site.data.track_record.leadership_note }}</p>
+        {%- endif %}
+        <ul class="services">
+          {%- for l in site.data.track_record.leadership %}
+          <li><h3>{{ l.org }}</h3><p>{{ l.detail }}</p></li>
+          {%- endfor %}
+        </ul>
+      </div>
     </div>
   </section>
 

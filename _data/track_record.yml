@@ -1,26 +1,27 @@
 # TRACK RECORD page: summary, headline figures and career entries.
 # Career entries show in the order listed here, so keep the newest at the top.
-summary: Led R&D efforts of more than 17 people internationally at MIT, the Broad Institute, Draper and Endolytix, including company formation and raising $30M to fund my R&D programs.
+summary: Led international R&D efforts at MIT, the Broad Institute, Draper and Endolytix, including company formation and raising $30M to fund my R&D programs.
 figures:
   - value: "30+"
     label: years in biomedical research
   - value: "$30M"
     label: raised for R&D
   - value: "17+"
-    label: people led in R&D, internationally
+    label: people led in R&D across three organizations
   - value: "11"
     label: peer-reviewed scientific publications
   - value: "28"
     label: U.S. patent applications filed
   - value: "19"
     label: U.S. patents granted
+leadership_note: "Each team was multidisciplinary, spanning phage engineering, assay development, functional genomics, metabolic engineering, microfluidics, protein biochemistry, fermentation for protein production, and formulation, along with operations and broad executive functions."
 leadership:
   - org: MIT – Broad Institute
-    detail: "Directed a 17-person international collaboration involving MIT, the Broad Institute, and University of York (UK)"
+    detail: "Directed an international collaboration involving MIT, the Broad Institute, and University of York (UK)"
   - org: Draper
-    detail: "Led 17+ person R&D teams"
+    detail: "Founded and led Draper's Synthetic Biology Group"
   - org: Endolytix Technology
-    detail: "Led 17+ person R&D teams"
+    detail: "Built and led multidisciplinary R&D organizations"
 career:
   - year: "September 2025 – Present"
     title: "Advisor to the Richi Foundation whose mission is to cure childhood cancer"
@@ -106,7 +107,7 @@ career:
     org: "Massachusetts Institute of Technology (MIT) \u2014 Cambridge, MA"
     points:
       - "Led collaborative OMICs and metabolic engineering programs focused on microbial biofuel production"
-      - "Directed a 17-person international collaboration involving MIT, the Broad Institute, and University of York (UK)"
+      - "Directed an international collaboration involving MIT, the Broad Institute, and University of York (UK)"
   - year: "1998 \u2013 2006"
     title: "PhD Researcher"
     org: "Johns Hopkins University School of Medicine \u2014 Baltimore, MD"

@@ -269,3 +269,6 @@ ol.pubs{list-style:none}
 .post-body .video a:hover img{opacity:1}
 .post-body .video .play{position:absolute;left:50%;top:50%;width:72px;height:50px;margin:-25px 0 0 -36px;border-radius:12px;background:rgba(0,0,0,.75);border:2px solid #84AAF1}
 .post-body .video .play::after{content:"";position:absolute;left:29px;top:13px;border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #84AAF1}
+
+/* v18.25: multidisciplinary note above the R&D leadership list */
+.lead-note{color:#84AAF1;font-size:1rem;max-width:var(--measure);margin-bottom:1.2rem}
