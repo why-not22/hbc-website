@@ -2,7 +2,7 @@
 # Tip: any text that starts with "TODO: " shows as a dashed placeholder box on the site.
 founder_line: "Jason Holder PhD"
 # headshot: path to the photo shown under the About title, e.g. /assets/headshot.jpg (leave "" to hide)
-headshot: /assets/headshot.png
+headshot: /assets/headshot.jpg
 paragraphs:
   - "Holder Biotech Consulting (HBC) helps biotech founders, investors, scientific leaders, foundations, and government partners turn promising ideas and assets into financed product development programs. Let's find your targeted solution today!"
 
