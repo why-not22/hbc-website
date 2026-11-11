@@ -12,6 +12,7 @@ cloudflare_analytics_token: "aa6802ffae1b44a29638fae333d5e4b7"
 exclude: [README.md]
 
 # RSS feed for post followers (built by GitHub Pages at /feed.xml)
-plugins: [jekyll-feed]
+# jekyll-sitemap builds /sitemap.xml so search engines can find every page
+plugins: [jekyll-feed, jekyll-sitemap]
 feed:
   path: feed.xml
