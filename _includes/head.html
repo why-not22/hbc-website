@@ -11,3 +11,36 @@
 {%- if site.cloudflare_analytics_token != "" %}
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_analytics_token }}"}'></script>
 {%- endif %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ page.summary | default: page.description | default: site.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/share-card.png' | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+{%- if page.url == '/' %}
+{%- assign li = site.data.social | where: "icon", "linkedin" | first %}
+{%- assign oc = site.data.social | where: "icon", "orcid" | first %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "{{ site.title }}",
+  "alternateName": "HBC",
+  "url": "{{ site.url }}/",
+  "logo": "{{ '/assets/logo-full.png' | absolute_url }}",
+  "image": "{{ '/assets/share-card.png' | absolute_url }}",
+  "description": "{{ site.description }}",
+  "address": {"@type": "PostalAddress", "addressLocality": "Boston", "addressRegion": "MA", "addressCountry": "US"},
+  "founder": {
+    "@type": "Person",
+    "name": "Jason Holder",
+    "honorificSuffix": "PhD",
+    "sameAs": [{% if li %}"{{ li.url }}"{% endif %}{% if li and oc %}, {% endif %}{% if oc %}"{{ oc.url }}"{% endif %}]
+  }
+}
+</script>
+{%- endif %}
